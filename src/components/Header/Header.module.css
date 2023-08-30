@@ -1,0 +1,171 @@
+.header {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 80%;
+}
+
+
+.catalog {
+    padding: 2% 10%;
+    color: white;
+    background-color: #393;
+    border-radius: 5px;
+    border: 2px solid #393;
+    transition: 1s;
+    display: block;
+    height: 70%;
+}
+
+.catalog:hover {
+    font-size: 1rem;
+    font-weight: 800;
+    transition: 1s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navContainer {
+    width: 40%;
+}
+
+a.active {
+    color: #393;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.navItem {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navItem:hover {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.itemsWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basketContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.bag {
+    font-size: 2rem;
+}
+
+.total {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    font-size: 0.9rem;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+.itemsWrapper {
+    width: 8%;
+}
+
+@media (max-width: 500px) {
+    .mobile_btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        left: -100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #f8f8f8;
+        z-index: 10;
+        transition: left 1.5s;
+    }
+
+    .navItem {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .mobile_btn:hover,
+    .basketContainer:hover {
+        color: #363;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .catalog {
+        display: none;
+    }
+
+
+    .itemsWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .basketContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .bag {
+        font-size: 2rem;
+    }
+
+    .total {
+        position: absolute;
+        z-index: 1;
+        top: 14px;
+        font-size: 0.9rem;
+    }
+}

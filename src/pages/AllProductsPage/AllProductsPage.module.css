@@ -1,0 +1,26 @@
+
+    .mainTitle {
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 1.2px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+@media screen and (min-width: 780px) {
+    .mainTitle {
+        font-size: 40px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

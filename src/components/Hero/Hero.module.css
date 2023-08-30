@@ -1,0 +1,92 @@
+    .hero {
+        background-color: #a1e2eb;
+        padding: 2% 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container {
+        width: 40%;
+    }
+
+    .title {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .description {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 15%;
+    }
+
+    .sale {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 2% 13%;
+        border-radius: 13px;
+        background: #fff;
+        transition: 1s;
+    }
+
+    .sale:hover {
+        font-size: 1.4rem;
+        font-weight: 800;
+        transition: 1s;
+    }
+
+    .img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    @media screen and (min-width: 780px) {
+        .title {
+            font-size: 4rem;
+        }
+
+        .description {
+            font-size: 2.7rem;
+            margin-bottom: 10%;
+        }
+
+        .sale {
+            font-size: 1.5rem;
+        }
+
+        .sale:hover {
+            font-size: 1.7rem;
+        }
+
+        .img {
+            width: 45%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .title {
+            font-size: 5rem;
+        }
+
+        .description {
+            font-size: 3rem;
+        }
+
+        .sale {
+            font-size: 2rem;
+        }
+
+        .sale:hover {
+            font-size: 2.3rem;
+        }
+
+        .img {
+            width: 40%;
+        }
+    }

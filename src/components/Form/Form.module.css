@@ -1,0 +1,78 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.input {
+    border-radius: 25.147px;
+    background: #FFF;
+    width: 60%;
+    height: 30%;
+    margin-bottom: 5%;
+    padding: 4% 10%;
+    font-size: 0.8rem;
+}
+
+.messageContainer {
+    margin-bottom: 5%;
+    width: 80%;
+    color: #FFF;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.btn {
+    width: 80%;
+    padding: 4% 10%;
+    background-color: transparent;
+    border-radius: 25.147px;
+    border: 2.395px solid #FFF;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.862px;
+    transition: 1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #F1FFF1;
+    border: 2.395px solid #393;
+    color: #393;
+    transition: 1s;
+}
+
+@media screen and (min-width: 780px) {
+    .input {
+        font-size: 1.2rem;
+    }
+
+    .messageContainer {
+        height: 10%;
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .input {
+        width: 70%;
+        margin-bottom: 2%;
+        font-size: 1.5rem;
+    }
+
+    .messageContainer {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+}

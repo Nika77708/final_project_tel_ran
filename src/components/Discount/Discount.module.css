@@ -1,0 +1,63 @@
+.container {
+    background-image: linear-gradient(to right, #086B08, #2F942F);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 0% 0% 0%;
+}
+
+.gnome {
+    max-width: 35%;
+    height: auto;
+    background-size: cover;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.discount,
+.title {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    margin-bottom: 3%;
+    width: 80%;
+}
+
+
+@media screen and (min-width: 780px) {
+    .container {
+        padding: 2% 0% 1% 0%;
+    }
+
+    .gnome {
+        max-width: 45%;
+    }
+
+    .infoContainer {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gnome {
+        max-width: 50%;
+    }
+
+    .infoContainer {
+        width: 50%;
+    }
+
+    .discount,
+    .title {
+        font-size: 3.5em;
+        margin-bottom: 2%;
+    }
+}

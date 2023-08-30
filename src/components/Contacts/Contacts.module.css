@@ -1,0 +1,274 @@
+.wrapper {
+    color: #000;
+    margin-top: 5%;
+}
+
+.contacts,
+.socialMediaWrapper,
+.anchor,
+.workingTimeWrapper {
+    display: flex;
+}
+
+.title,
+.phone,
+.anchor,
+.adressDescription,
+.workingTime,
+.hours {
+    line-height: 130%;
+}
+
+.socialMediaWrapper,
+.anchor,
+.workingTimeWrapper {
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.phone,
+.adressDescription {
+    font-size: 1.3rem;
+}
+
+.contacts {
+    justify-content: space-between;
+    margin-bottom: 4%;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.title {
+    font-weight: 700;
+}
+
+.phone:hover,
+.adressDescription:hover,
+.anchor:hover,
+.whatsUp:hover,
+.instagram:hover {
+    color: #393;
+    cursor: pointer;
+}
+
+.phone {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.socialMediaWrapper {
+    width: 40%;
+    justify-content: space-around;
+}
+
+.anchor {
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.instagram,
+.whatsUp {
+    width: 50%;
+    height: auto;
+}
+
+
+.adressDescription {
+    font-weight: 600;
+    text-decoration-line: underline;
+    font-style: normal;
+}
+
+.workingTimeWrapper {
+    flex-direction: row;
+    margin-top: 1.3rem;
+}
+
+.workingTime {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+.hours {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        display: flex;
+        margin-top: 3%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .adressDescription {
+        font-size: 1.2rem;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: start;
+        width: 45%;
+    }
+
+    .socialMediaWrapper {
+        width: 65%;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .instagram,
+    .whatsUp {
+        width: 45%;
+    }
+
+    .address {
+        width: 50%;
+    }
+
+    .workingTimeWrapper {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0.5rem;
+    }
+
+    .workingTime {
+        font-size: 0.8rem;
+    }
+
+    .hours {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .wrapper {
+        margin-top: 2%;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .phone {
+        font-size: 2.2rem;
+    }
+
+    .adressDescription {
+        font-size: 1.8rem;
+    }
+
+    .contacts {
+        justify-content: space-between;
+        margin-bottom: 2%;
+    }
+
+    .title {
+        font-weight: 700;
+    }
+
+    .phone {
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .socialMediaWrapper {
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .anchor {
+        flex-direction: column;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .instagram,
+    .whatsUp {
+        width: 60%;
+        height: auto;
+    }
+
+    .address {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .adressDescription {
+        font-weight: 600;
+        text-decoration-line: underline;
+        font-style: normal;
+    }
+
+    .workingTimeWrapper {
+        flex-direction: row;
+    }
+
+    .workingTime {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .hours {
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .phone {
+        font-size: 3rem;
+    }
+
+    .adressDescription {
+        font-size: 2.5rem;
+    }
+
+    .contacts {
+        width: 40%;
+    }
+
+    .socialMediaWrapper {
+        width: 40%;
+        align-items: start;
+    }
+
+    .anchor {
+        font-size: 1rem;
+    }
+
+    .instagram,
+    .whatsUp {
+        width: 60%;
+        height: auto;
+    }
+
+    .address {
+        width: 60%;
+    }
+
+    .workingTime {
+        font-size: 1.5rem;
+    }
+
+    .hours {
+        font-size: 1.5rem;
+    }
+}

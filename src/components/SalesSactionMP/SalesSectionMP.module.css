@@ -1,0 +1,42 @@
+    .error,
+    .title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 1.2px;
+    }
+
+    .error {
+        color: #393;
+    }
+
+    .title {
+        color: #000;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+    }
+
+
+    @media screen and (min-width: 550px) {
+        .wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media screen and (min-width: 780px) {
+
+        .error,
+        .title {
+            font-size: 2rem;
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1%;
+        }
+    }

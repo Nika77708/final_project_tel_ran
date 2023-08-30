@@ -1,0 +1,101 @@
+.mainWrapper {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mainWrapper,
+.priceWrapper,
+.discWrapper,
+.sortedWrapper {
+    display: flex;
+}
+
+.mainWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.priceWrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.input {
+    width: 70%;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+
+.sortWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.sortedWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select {
+    width: 63%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    .mainWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .priceWrapper {
+        flex-direction: row;
+        align-items: center;
+        height: 30px;
+    }
+
+    .input {
+        height: 40%;
+        width: 30%;
+        padding: 1% 1%;
+    }
+
+    .sortWrapper {
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+    }
+
+    .select {
+        width: 100%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .priceWrapper {
+        justify-content: space-between;
+    }
+
+    .sortWrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .priceWrapper {
+        height: 30px;
+    }
+
+    .sortedWrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}

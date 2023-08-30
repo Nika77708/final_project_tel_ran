@@ -1,0 +1,150 @@
+.apperWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navApperWrapper {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.navApperWrapper:hover {
+    color: #393;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.arrow {
+    height: 10px;
+}
+
+.wrapper,
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.btn {
+    width: 150px;
+    padding: 6px 17px;
+    color: white;
+    background-color: #393;
+    border-radius: 5px;
+    border: 2px solid #393;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.btn:hover {
+    font-size: 17px;
+    transition: 1s;
+}
+
+.cartWrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartTitle {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.cart {
+    width: 350px;
+    height: auto;
+}
+
+
+@media screen and (min-width: 500px) {
+    .apperWrapper {
+        align-items: center;
+        margin: auto;
+        width: 60%;
+    }
+
+    .btn {
+        width: 200px;
+        padding: 12px 22px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .cart {
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .apperWrapper {
+        margin: 0px 0px 0px 4%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn {
+        width: 200px;
+        padding: 5px 15px;
+        font-size: 25px;
+    }
+
+    .btn:hover {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        gap: 20px;
+        align-items: start;
+    }
+
+    .btn {
+        width: 200px;
+        padding: 5px 15px;
+        color: white;
+        background-color: #393;
+        border-radius: 5px;
+        border: 2px solid #393;
+        transition: 1s;
+        font-size: 25px;
+    }
+
+    .btn:hover {
+        font-size: 27px;
+        transition: 1s;
+    }
+
+    .cart {
+        width: 550px;
+    }
+}
