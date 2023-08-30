@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/final_project_tel_ran/static/css/main.dc7cb1c3.css",
+    "main.js": "/final_project_tel_ran/static/js/main.fbc04abd.js",
+    "static/media/flowerbed.png": "/final_project_tel_ran/static/media/flowerbed.2feec23d9280f5b4b953.png",
+    "static/media/error.jpg": "/final_project_tel_ran/static/media/error.b15db41e8ff13748852d.jpg",
+    "static/media/garden_gnome.png": "/final_project_tel_ran/static/media/garden_gnome.39191dc3ba4ded8a6ab8.png",
+    "static/media/emptyCart.webp": "/final_project_tel_ran/static/media/emptyCart.cb702367a46bbed55e01.webp",
+    "static/media/logo.svg": "/final_project_tel_ran/static/media/logo.0f17cc3bbb8dd1b8bcd89f7e75ab481d.svg",
+    "index.html": "/final_project_tel_ran/index.html",
+    "main.dc7cb1c3.css.map": "/final_project_tel_ran/static/css/main.dc7cb1c3.css.map",
+    "main.fbc04abd.js.map": "/final_project_tel_ran/static/js/main.fbc04abd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc7cb1c3.css",
+    "static/js/main.fbc04abd.js"
+  ]
+}
