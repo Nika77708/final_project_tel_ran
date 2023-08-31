@@ -14,7 +14,6 @@ export default function Header() {
     (state) => state.allReducers.basket.totalProducts
   );
 
- 
   return (
     <header >
       <Section>

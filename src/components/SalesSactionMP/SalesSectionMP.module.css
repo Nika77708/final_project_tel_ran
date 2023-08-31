@@ -12,6 +12,12 @@
 
     .title {
         color: #000;
+        transition: 1s;
+    }
+
+    .title:hover {
+        color: #393;
+        transition: 1s;
     }
 
     .wrapper {

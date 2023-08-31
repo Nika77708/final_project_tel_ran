@@ -18,7 +18,6 @@ import {filterReducer} from "./filterSlice";
 const persistConfig = {
   key: "root",
   storage,
-  //blacklist: [sliceApi.reducer, filterReducer],
   blacklist: [sliceApi.reducer, filterReducer],
 };
 

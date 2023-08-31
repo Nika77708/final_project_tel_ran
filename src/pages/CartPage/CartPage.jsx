@@ -44,6 +44,8 @@ export default function CartPage() {
     dispatch(countTotalProducts());
   };
 
+  const length = data.length
+
   return (
     <Section>
       <div className={css.apperWrapper}>
@@ -86,7 +88,7 @@ export default function CartPage() {
           )}
         </div>
 
-        <OrderForm />
+        <OrderForm length={length} />
       </div>
     </Section>
   );

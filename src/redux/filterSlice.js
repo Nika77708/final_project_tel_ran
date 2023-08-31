@@ -27,8 +27,6 @@ const filterSlice = createSlice({
   },
 });
 
-console.log(filterSlice);
-
 export const {
   selectToPrice,
   selectFromPrice,

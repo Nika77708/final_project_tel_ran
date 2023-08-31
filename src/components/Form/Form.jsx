@@ -43,7 +43,6 @@ export default function Form() {
           required: true,
           pattern: {
             value: /\(?\+\(?49\)?[ ()]?([- ()]?\d[- ()]?){10}/,
-
             message: "Invalid phone number",
           },
         })}
