@@ -47,7 +47,6 @@ export const {
   useGetProductsByCategoryQuery,
   useGetSingleProductQuery,
   useGetAllProductsQuery,
-  useGetSingleCategoryProductsQuery,
   usePostPhoneNumberForDiscountMutation,
   usePostOrderMutation
 } = sliceApi;

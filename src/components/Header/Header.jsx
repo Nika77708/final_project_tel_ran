@@ -15,7 +15,7 @@ export default function Header() {
   );
 
   return (
-    <header >
+    <header>
       <Section>
         <div className={css.container}>
           <div className={css.logoContainer}>
@@ -64,13 +64,13 @@ export default function Header() {
               {nav ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
             </div>
 
-            <div className={css.basketContainer}>
-              <NavLink to="/basket">
+            <NavLink to="/basket">
+              <div className={css.basketContainer}>
                 <TfiBag className={css.bag} />
-              </NavLink>
 
-              <p className={css.total}>{totalProduct}</p>
-            </div>
+                <p className={css.total}>{totalProduct}</p>
+              </div>
+            </NavLink>
           </div>
         </div>
       </Section>

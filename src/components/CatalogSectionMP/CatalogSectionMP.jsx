@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink  } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useGetAllСategoriesQuery } from "../../redux/apiSlice";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import Loader from "../Loader/Loader";

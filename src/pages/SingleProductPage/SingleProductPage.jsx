@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
 import Section from "../../components/Section/Section";
 import { useGetSingleProductQuery } from "../../redux/apiSlice";
 import {
-    addProductBasket,
-    countTotalPrice,
-    countTotalProducts,
+  addProductBasket,
+  countTotalPrice,
+  countTotalProducts,
 } from "../../redux/basketSlice";
 import css from "./SingleProductPage.module.css";
 
@@ -18,11 +18,21 @@ export default function SingleProductPage() {
   const res = data && data[0];
   const dispatch = useDispatch();
 
+  const ref = useRef(null);
+
   const addProductBasketHandler = (product) => {
     dispatch(addProductBasket(product));
     dispatch(countTotalPrice());
     dispatch(countTotalProducts());
   };
+
+  setTimeout(() => {
+    if (ref.current) {
+        ref.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+  }, 100);
 
   if (error) {
     return (
@@ -41,7 +51,9 @@ export default function SingleProductPage() {
       ) : (
         <div className={css.container}>
           <div className={css.imgContainer}>
-            <h1 className={css.title}>{res.title}</h1>
+            <h1 ref={ref} className={css.title}>
+              {res.title}
+            </h1>
             <img
               className={css.img}
               src={`https://backend-for-final-project-garden.onrender.com/${res.image}`}

@@ -11,7 +11,7 @@ export default function Form() {
     formState: { errors },
     reset,
   } = useForm();
-
+  
   const [postPhoneNumberForDiscount, { isError }] =
     usePostPhoneNumberForDiscountMutation();
 
@@ -28,7 +28,7 @@ export default function Form() {
       }
     );
     Notiflix.Notify.success(
-      "Thank you. Wait for a message with a discount code."
+      "Thank you. Wait for a message with a discount code.",
     );
 
     isError && Notiflix.Notify.info("Something is wrong. Please try again.");
@@ -50,8 +50,8 @@ export default function Form() {
       />
       {errors.phone && (
         <div className={css.messageContainer}>
-          The field is required.
-          Please check that the entered phone number is correct (only ten numbers, ignoring +49).
+          The field is required. Please check that the entered phone number is
+          correct (only ten numbers, ignoring +49).
         </div>
       )}
 

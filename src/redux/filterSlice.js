@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   filteredProducts: [],
-  toPrice: " ",
-  fromPrice: " ",
+  toPrice: "",
+  fromPrice: "",
   setDiscountedOnly: false,
   sortingValue: "asc",
 };

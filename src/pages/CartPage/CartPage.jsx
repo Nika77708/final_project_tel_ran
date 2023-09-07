@@ -1,20 +1,20 @@
 import { React } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import css from "./CartPage.module.css";
-import ProductsInBacket from "../../components/ProductsInBasket/ProductsInBacket";
-import {
-  cleanBasket,
-  countTotalPrice,
-  countTotalProducts,
-  decreaseProduct,
-  deleteProduct,
-  addProductBasket,
-} from "../../redux/basketSlice";
 import { TfiAngleRight } from "react-icons/tfi";
-import Section from "../../components/Section/Section";
-import OrderForm from "../../components/OrderForm/OrderForm";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import OrderForm from "../../components/OrderForm/OrderForm";
+import ProductsInBacket from "../../components/ProductsInBasket/ProductsInBacket";
+import Section from "../../components/Section/Section";
 import cart from "../../images/emptyCart.webp";
+import {
+    addProductBasket,
+    cleanBasket,
+    countTotalPrice,
+    countTotalProducts,
+    decreaseProduct,
+    deleteProduct,
+} from "../../redux/basketSlice";
+import css from "./CartPage.module.css";
 
 export default function CartPage() {
   const data = useSelector((state) => state.allReducers.basket.products);
@@ -43,8 +43,6 @@ export default function CartPage() {
     dispatch(countTotalPrice());
     dispatch(countTotalProducts());
   };
-
-  const length = data.length
 
   return (
     <Section>
@@ -88,7 +86,7 @@ export default function CartPage() {
           )}
         </div>
 
-        <OrderForm length={length} />
+        <OrderForm />
       </div>
     </Section>
   );

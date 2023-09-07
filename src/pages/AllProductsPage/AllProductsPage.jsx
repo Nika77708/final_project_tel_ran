@@ -1,17 +1,17 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import Section from "../../components/Section/Section";
-import css from "./AllProductsPage.module.css";
+import React, { useCallback, useEffect, useState  } from "react";
 import { useDispatch } from "react-redux";
+import { NavLink } from "react-router-dom";
 import { Filtration } from "../../components/Filtration/Filtration";
 import Loader from "../../components/Loader/Loader";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Section from "../../components/Section/Section";
 import { useGetAllProductsQuery } from "../../redux/apiSlice";
 import {
     addProductBasket,
     countTotalPrice,
     countTotalProducts,
 } from "../../redux/basketSlice";
+import css from "./AllProductsPage.module.css";
 
 
 export default function AllProductsPage({ isDiscounted = false }) {

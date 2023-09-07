@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { useGetSingleProductQuery } from "../../redux/apiSlice";
 import Loader from "../Loader/Loader";
 import Section from "../Section/Section";
@@ -14,7 +14,7 @@ export default function ProductCard({
   const { isLoading } = useGetSingleProductQuery();
 
   const [isShown, setIsShown] = useState(false);
-
+  
   return (
     <>
       {isLoading ? (

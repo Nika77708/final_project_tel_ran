@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  selectDiscountedOnly,
-  selectFromPrice,
-  selectSorting,
-  selectToPrice,
+    selectDiscountedOnly,
+    selectFromPrice,
+    selectSorting,
+    selectToPrice,
 } from "../../redux/filterSlice";
 import css from "./Filtration.module.css";
 

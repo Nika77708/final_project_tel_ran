@@ -6,7 +6,7 @@ import { usePostOrderMutation } from "../../redux/apiSlice";
 import { deleteProducts } from "../../redux/basketSlice";
 import css from "./OrderForm.module.css";
 
-export default function OrderForm({ length }) {
+export default function OrderForm() {
   const totalPrice = useSelector(
     (state) => state.allReducers.basket.totalPrice
   );
@@ -14,7 +14,6 @@ export default function OrderForm({ length }) {
   const total = totalPrice.toFixed(2);
   const totalOrder = useSelector((state) => state.allReducers.basket);
 
-  console.log(total);
   const {
     register,
     handleSubmit,

@@ -1,25 +1,25 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { sliceApi } from "./apiSlice";
-import { basketReducer } from "./basketSlice";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import {
-  persistStore,
-  persistReducer,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
+    FLUSH,
+    PAUSE,
+    PERSIST,
+    PURGE,
+    REGISTER,
+    REHYDRATE,
+    persistReducer,
+    persistStore,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import {filterReducer} from "./filterSlice";
+import { sliceApi } from "./apiSlice";
+import { basketReducer } from "./basketSlice";
+import { filterReducer } from "./filterSlice";
 
 const persistConfig = {
-  key: "root",
-  storage,
-  blacklist: [sliceApi.reducer, filterReducer],
-};
+    key: 'root',
+    storage,
+    blacklist: [sliceApi.reducer, 'filter'],
+  }
 
 const rootReducer = combineReducers({
   basket: basketReducer,

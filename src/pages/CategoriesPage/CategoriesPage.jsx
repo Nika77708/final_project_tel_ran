@@ -1,7 +1,7 @@
 import React from "react";
-import Section from "../../components/Section/Section";
 import { NavLink } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
+import Section from "../../components/Section/Section";
 import { useGetAllСategoriesQuery } from "../../redux/apiSlice";
 import css from "./CategoriesPage.module.css";
 
